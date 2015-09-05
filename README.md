@@ -1,3 +1,3 @@
 # Charcount-Ruby
 Simple charcount en ruby.
-Su'itlise en appelant la fonction CharcountInit().
+S'utilise en appelant la fonction CharcountInit().
