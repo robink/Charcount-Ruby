@@ -1,9 +1,9 @@
-def CharcountInit(x)
-	x = x.split("").sort
-	a = Charcountrec(x)
+def charCountInit(x)
+	x = x.chars.sort
+	a = charCountRec(x)
 	a.each{|i| puts "Le carcatere #{i[0]} est present #{i[1]} fois"}
 end
-def Charcountrec(x)
+def charCountRec(x)
 	if x == []
 		[]
 	else
@@ -12,6 +12,6 @@ def Charcountrec(x)
 		while x[compteur] == char
 			compteur += 1
 		end
-		[[char, compteur]] + Charcountrec(x[compteur..-1])
+		[[char, compteur]] + charCountRec(x[compteur..-1])
 	end
 end
